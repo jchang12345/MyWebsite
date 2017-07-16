@@ -1,0 +1,146 @@
+
+
+
+
+<html>
+<head>
+	<!--
+	<link rel="stylesheet" type="text/css" href="helper.css"/>
+	<style type="text/css">
+	</style>
+-->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title> C++ PAGE </title>
+
+</head>
+<body>
+<!-- make a nav bar -->
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+    <a href="#top" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> TOP</a>
+    <a href="#project3" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PROJECT3</a>
+    <a href="#project4" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PROJECT4</a>
+  </div>
+
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#project3" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJECT3</a>
+    <a href="#project4" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJECT4</a>
+     <a href="#top" class="w3-bar-item w3-button" onclick="toggleFunction()">TOP</a>
+  </div>
+</div>
+<div id="top">
+	<br/>
+	<img src="xcodeimage.jpg" width="300" height="300">
+<p> XCODE</p>
+</div>
+
+
+
+<!--Info on general knowledge -->
+<div id="top"> 
+</br>
+<p > Below is a description of my C++ CS knowledge, gained from first year coursework. </p>
+
+<p> <strong> General </strong>: Working knowledge of: Functions, Pointers, Classes, Recursion, Data Structures (Arrays, Linked List (singly/doubly/circular), BST, Hash Tables, Heaps) , STLs (Queues, Stacks, Vector (dynamically reallocated array), List) Inheritance/Polymorphism, basic Algorithmic Complexity. <strong> Notes of these avaialble upon request, coming soon.</strong>
+</p>
+</div>
+<!-- info on p3 -->
+<div id="project3">
+	<br/>
+<p> <strong> Project 3 (Battleships) </strong>:
+	<p>
+	<strong>Main Concepts</strong>: Data structures, Inheritance, Polymorphism, Recursion, and OOP
+	<br/>	
+	<br/>
+	<em>General</em>: This project focused on developing from skeleton code, a working battleship game. Writing helper functions, deciding what kind of design or approach for the program, and choosing the right data structures can help save time and improve the flow of the program. After developing the setup so that a game can be created between two players, AI (Artifical Intelligence) had to be written (a bad, mediocre, and good player), with varying ranges of playstyle and level of decision making. This also relied on working knowledge of inheritance, polymorphism, recursion, and data structures in the full implementation. Details of the implementation I used can be found 
+	<br/>
+	<a href="p3report.docx" id="linkrep3"> <strong>Here</strong></a>.
+		 <p>Fill out this form if you are interested in playing/testing this game, or if you would like to see the source code (not on my GitHub):</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+
+
+
+</p>
+</p>
+</div>
+<br/>
+<br/>
+<hr/>
+<!-- info on p4 -->
+<p id="project4"> <strong> Project 4 (Symbol Processor) </strong>: 
+	<br/>
+	<br/>
+	<strong> Main Concepts </strong>: Data Structures (Hash Tables), Runtime Complexity, IO form streams (stringstream and openfile)
+	<br/>
+	<br/>
+	<em>General</em>: This project focused on developing from a correct but ineficient implementation of a <strong>symbol table</strong>, into an even more efficient implementation. A <strong>symbol table</strong> looks at symbols in a body of code, and checks if there are any redeclarations of the same symbol in a given scope level. This is important in modern compilers because we shouldn't try to redefine a unique symbol in the same scope, but we must also keep track and be allowed to redefine a unique symbol in a different scope level. Initially, this was implemented with a vector which has a O(N) complexity for searching, inserting, and deleting. This may not seem bad until we consider huge files (example file to test this with can be with a 2MB 2 million symbols .txt file) which will take a lot longer than it needs to be. However, with a closed hash table (bucket size of 20,000), the runtime average can be improved to a O(1) for searching, inserting, and deleting with a worst case of O(N) with low constant of proportionality, which is significantly better than the case of O(N) for big sample sizes.  Details of the implementation I used for this project can be found
+	<br/>
+	 <a href="p4report.docx" id="linkrep4"> <strong>Here</strong></a>.
+
+	<br/>
+	<br/>
+	<p>Fill out this form if you would like to see the source code (not on my GitHub):</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+</p>
+
+
+<!-- for the notes 
+<p>Fill out this form if you are interested in either my notes,  (not on my GitHub):</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+
+
+-->
+
+
+</body>
+</html>
+

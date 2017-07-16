@@ -1,41 +1,256 @@
-<!doctype html>
+
+
+
+
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="projecthelper.css"/>
-<style type= "text/css">
- <script type="text/javascript" src="/Users/justinchang/Desktop/Personal Projects/MyWebsite/projectjs.js"></script>
+	<!--
+	<link rel="stylesheet" type="text/css" href="helper.css"/>
+	<style type="text/css">
+	</style>
+-->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title> Project PAGE </title>
+<style>
+* { box-sizing: border-box; }
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+}
+.video-foreground,
+.video-background iframe {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  pointer-events: none;
+
+}
+#test
+{
+	color:#ffffff;
+}
+#vidtop-content {
+	top: 0;
+	color: #ffffff;
+}
+.vid-info { position: absolute; top: 0; right: 0; width: 33%; background: rgba(0,0,0,0.3); color: #fff; padding: 1rem; font-family: Avenir, Helvetica, sans-serif; }
+.vid-info h1 { font-size: 2rem; font-weight: 700; margin-top: 0; line-height: 1.2; }
+.vid-info a { display: block; color: #ffffff; text-decoration: none; background: rgba(0,0,0,0.5); transition: .6s background; border-bottom: none; margin: 1rem auto; text-align: center; }
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground { width: 300%; left: -100%; }
+}
+@media all and (max-width: 600px) {
+.vid-info { width: 50%; padding: .5rem; }
+.vid-info h1 { margin-bottom: .2rem; }
+}
+@media all and (max-width: 500px) {
+.vid-info .acronym { display: none; }
+}
+</style>
+
+</head>
+<body>
+<style>
+a{
+	color:white;
+}
+</style>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="index.html" class="w3-bar-item w3-button"> HOME</a>
+    
+  </div>
 
 
-
-	<p> YOU HAVE HIT PAGE projects </p>
-	<a href="MyWebsite.html">HomePage</a>
-	<video poster="https://youtu.be/vbDzIktZ6Go" id="bgvid" playsinline autoplay muted loop>
-  <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
-<source src="https://youtu.be/vbDzIktZ6Go" type="video/webm">
-<source src="https://youtu.be/vbDzIktZ6Go" type="video/mp4">
-</video>
-<div id="Projects">
-<h1>Polina</h1>
-<p>filmed by Justin Chang
-<p><a href="https://youtu.be/vbDzIktZ6Go/Create-Fullscreen-HTML5-Page-Background-Video">original article</a>
-
-<p> This is a list of all of my projects I have compiled.</p>
-	<ul> <!-- this is how to make numbered list <ol> </ol> -->
-		<li> 9DOF</li>
-		<li> ML </li>
-		<li> CSS </li>
-		<li> Intel Edison </li>
-		<li> Arduino Nanno </li>
-		<li> Unity Tanks </li>
-		<li> Swift XCode </li>
-		<li> Hack on the Hill Website </li>
-		<li> HTML </li>
-	</ul>
-
-<button>Pause</button>
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#project3" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJECT3</a>
+    <a href="#project4" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJECT4</a>
+     <a href="#top" class="w3-bar-item w3-button" onclick="toggleFunction()">TOP</a>
+  </div>
 </div>
 
 
+
+
+ <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-white w3-xlarge w3-wide w3-animate-opacity">Projects <span class="w3-hide-small"></span></span>
+    <br/> <br/> <br/>
+    <!-- and an image of the cart for ee3 for now?
+	-->
+
+
+
+
+  </div>
+
+<div class="video-background" id="home">
+<div class= "video-background" style="position: fixed; z-index: -99; width: 100%; height: 100%">
+    <div class="video-foreground">
+      <iframe src="https://www.youtube.com/embed/videoseries?list=PLWMfJ0QmZ0FXYXG3_rYL_88Evo2KLB2Ty&controls=0&showinfo=0&rel=0&autoplay=1&loop=1&rel=0" frameborder="50" height="100%", width="100%" allowfullscreen></iframe>
+    </div>
+  </div>
+ 
+</div>
+
+
+
+<div id="vidtop-content">
+<div class="vid-info">
+	  <h1>Project Description:</h1>
+	  <p>
+	  If you want to go back home, follow this link:<a href="index.html" class="w3-bar-item w3-button"> HOME</a>
+
+	  	Descriptions
+   		</p>
+
+<h3><a name="Projects"></a> Project Section </h3>
+<p> This is a list of all of my recent relevant projects I've worked on. <strong> NOTE: </strong> Below on the list are links to the project or pages/relevant information. Simply click on the text to reach another link that discusses the particular project. <a href = "#pics" class="w3-bar-item w3-button"> HERE</a>
+
 	
-</head>
+	<ol> <!-- this is how to make numbered list <ol> </ol>-->
+		
+
+		<li> <a href= "https://docs.google.com/presentation/d/1pQcIurjjxO_pS6xbqxPL35JCNGeh78hGp8_CLQC_na0/edit?usp=sharing"> Phyiscal Therapy Weight Lifting Tracker</a> </li>
+		<li> <a href= "https://github.com/alexandergraening/HOTH--Team-Justin-" >Hack on the Hill 2 Website </a></li>
+		<li> <a href="https://docs.google.com/presentation/d/1E_UEbhAMPBCL9RscxnQi86TiOLn7g-Ay3j9OQgBnRXI/edit#slide=id.g1d74e17f22_0_0"> IEEE OPS final project </a> </li>
+		<li> <a href="EE3FinalReport.pdf" >EE3 LMP IR, Halls Effect Final Project </a></li>
+		<li> <a href="index.html" >Main Website </a></li>
+		
+	</ol>
+</p>
+<hr/>
+
+
+
+
+  </div>
+</div>
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="test">
+  <h3 class="w3-center" id="pics">MY WORK</h3>
+  <p class="w3-center"><em>Here are some of my recent projects. Click on the images to enlarge and read the captions.</em></p><br>
+
+
+
+
+
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="physicaltherapy.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Physical Therapy Weight Lifting Tracker. This project focused on using this 9 DOF (Degrees of Freedom) sensor, which has an accelerometer, gyroscope, (and irrelevant to this project, the magnetometer) in the x,y,z-axis, an intel edison, and an online machine learning API, and was done during an engineering seminar class at UCLA with 2 other teammates. In order to create a device that can detect proper measurements of bicep curls, shoulder presses, and random motions accurately, there must first be a data collection stage and a data parsing stage (using CSV data sheets to train the device using a machine learning algorithm). This data collection stage required going to the gym to obtain accurate values by actually strapping on that device and having the sensor pick up on relevant acceleration and rotation values, then recording the data for the algorithm to determine a set of motions. We can do this by SSH into the edison while at the gym and actually conducting tests of the motions, using around 50 test runs to get a more precise set of values for each motion. A link to the powerpoint presentation for this project can be found on the link (part of list) above.">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="HOTH2.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Hack on the Hill 2 Website. This project was actually my first time using HTML, CSS, and JavaScript. This project was done during a mini hackathon event at UCLA with 2 other teammates. Very basic level HTML and CSS was used. It eventually improves though such as my more recent website. The link (part of list) above leads to the github page that has all the information on this website.">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="ops.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="IEEE OPS Final Project. This project (hardware aspect) focused on using the arduino nano as the primary microcontroller, a L239D H Bridge for motor control, a 9V Battery to power the motors, and the internal 5V from the arduino to read IR values and send commands to the motors. The parts were mostly made from Eagle CAD PCB design, and soldered on, and served as an introduction to Micromouse projects. The primary task for this project was to solve a simple maze using PID (software aspect) which stands for proportional integral derivative controller, which uses negative feedback systems and constantly calculates in a periodic manner, the total error, total change in error, and attempts to stabilize the error in each instance to a range where error is too minimal for the car. Additionally, there was also the concept of PWM (pulse width modulation) that required certain parts like the motor to be connected to certain digital pins that allow analog write (analog pins only allow analog read, and most digital pins only allow digital read/ digital write. You can refer to an arduino data sheet for this information) More details can be found in the link (part of list) above.">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="ee3ckt.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="EE3 final project. This project was very similar to the IEEE OPS Final Project. However, it was more of a NatCar style project. It also focused (hardware aspect) on using L239D H Bridge for motor control, 9V battery to power motors, arduino nano as primary microcontroller, but used breadboards instead to read and interpret IR Values, and added an LED and Halls Effect Sensor to detect magnets (light up LED if a magnet is detected). It also used PID (software aspect) and PWM (read the OPS project caption for information on that). More information about the details can be found in the link (part of list) above.">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="myweb.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My website. You can find more information by clicking the home button or the link (part of list) above.">
+    </div>
+<!--
+    <div class="w3-col m3">
+      <img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+    </div>
+    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
+  </div>
+-->
+
+
+
+</div>
+
+
+
+
+
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+
+
+<!--<p><a href="https://youtu.be/vbDzIktZ6Go/Create-Fullscreen-HTML5-Page-Background-Video">original article</a>
+-->
+
+<!-- for the notes 
+<p>Fill out this form if you are interested in either my notes,  (not on my GitHub):</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+
+
+
+https://www.youtube.com/watch?v=3avetaV_SLM
+
+-->
+
+
+</body>
 </html>
+
+
