@@ -88,7 +88,7 @@ body, html {
 }
 
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -101,7 +101,7 @@ body, html {
     min-height: 100%;
 }
 
-/* Second image (Portfolio) */
+/* Second image (skill) */
 .bgimg-2 {
   background-image: url("chessskills.jpg");
 min-height: 400px;
@@ -110,6 +110,11 @@ min-height: 400px;
 /* Third image (Contact) */
 .bgimg-3 {
     background-image: url("cont.png");
+    min-height: 400px;
+}
+/* Third image (proj) */
+.bgimg-4 {
+    background-image: url("projects.jpg");
     min-height: 400px;
 }
 
@@ -132,19 +137,23 @@ min-height: 400px;
       <i class="fa fa-bars"></i>
     </a>
     <a href="#home" class="w3-bar-item w3-button">HOME</a>
+        <a href="#cover" class="w3-bar-item w3-button">CURRICULUM VITAE</a>
     <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#skills" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> SKILLS</a>
     <a href="#projects" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PROJECTS</a>
+    <a href="#skills" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> SKILLS</a>
     <a href="#survey" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-check-square-o"></i> SURVEY</a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    
+
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-      <i class="fa fa-search"></i>
+     <i class="fa fa-search"></i>
     </a>
   </div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#cover" class="w3-bar-item w3-button" onclick="toggleFunction()">CURRICULUM VITAE</a>
     <a href="#skills" class="w3-bar-item w3-button" onclick="toggleFunction()">SKILLS</a>
      <a href="#survey" class="w3-bar-item w3-button" onclick="toggleFunction()">SURVEY</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
@@ -165,7 +174,11 @@ min-height: 400px;
 
 
 
-
+<!-- container for cov let-->
+<div class="w3-content w3-container w3-padding-64" id="cover">
+  <h3 class="w3-center"><span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><a href="cover.html" > CV</span></a></h3>
+</div>
+<p> click on the CV link above to go to the CV page.
 
 
 <!-- Container (About Section) -->
@@ -174,12 +187,11 @@ min-height: 400px;
 </div>
 
 
-
-  <p class="w3-center"><em>SGV ALL THE WAY! :D</em></p>
-  <p>My name is Justin Chang and I am an aspiring CSE/EE Major, class of 2020, studying at UCLA. Aside from my academic interests, I am involved in basketball, chess, running, dancing, video gaming, and hanging out with friends. I'd like to think that although academics are important and definitely time consuming, other extracurricular activities (and even web dev) is just as interesting and come in 2nd to my time spent. </p>
+  <p class="w3-center"><em>I am a <strong>Taiwanese American</strong> living in the SGV</em></p>
+  <p>My name is Justin Chang and I am an aspiring CSE/EE Major, class of 2020, studying at UCLA. Aside from academic endeavors, I am interested in basketball, chess, running, dancing, video gaming, and hanging out with friends. I'd like to think that although academics are important, other extracurricular activities (and even web dev) are just as interesting and come in 2nd to my time spent. </p>
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>Justin Chang</b></p><br>
+      <p><b><i class="fa fa-user w3-margin-right"></i>Justin Chang at UCLA</b></p><br>
       <img src="Me.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" >
       <img src="MyProfilePic.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" >
 
@@ -189,19 +201,26 @@ min-height: 400px;
 
     <!-- Hide this text on small devices -->
     <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p>Welcome to my personal website. The pictures are (left) picture taken when my roomate wanted a selfie of me, and (right)when I attended the CKI (Circle K International) club photoshoot, where I had to put on a "Grunge" theme. I am very passionate about many things in life, such as my past and present projects, my hobbies, as well as other miscellaenous things. (GIVE AN A REF TO SAME HTML LINK TO PROJECTS LATER) </p>
+      <p>Welcome to my personal website. The pictures were (1st one) taken when my roomate wanted a selfie of me, and (2nd one) when I attended the CKI (Circle K International) club photoshoot, where I had to put on a "Grunge" theme. I'd like this website to be more of a for fun, know about me, my interests, and other miscellaenous information page (or if you want to get in contact with me just hit the contact button and drop me a message). If you want to see a "cover page" like link, click here or on nav bar too (LINK TO COVER PAGE). If you want to see some of my recent and past projects, <a href="project.html" id="linkpageprojects">click here</a></p>
     </div>
   </div>
 </br>
 <!--<h3><a name="Skills"></a> Skills Section/Experience </h3>
 -->
-
+<div class="w3-content w3-container w3-padding-64" id="projects">
+<p class="w3-center"><em>Click on the PROJECTS to go to my projects html page, or <a href="project.html" id="linkpageprojects">click here</a></em></p><br>
+</div>
+<!-- Parallax Image with project Text -->
+<div class="bgimg-4 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+ <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><a href="project.html" id="linkpageprojects">PROJECTS</a> <span class="w3-hide-small"></div>
+</div>
 
 
 
 <!-- Container (skill Section) -->
 <div class="w3-content w3-container w3-padding-64" id="skills">
-  <p class="w3-center"><em>Here are some of my SKILLS</em></p><br>
+  <p class="w3-center"><em>And here are some of my SKILLS.</em></p><br>
 </div>
 <!-- Second Parallax Image with skill Text -->
 <div class="bgimg-2 w3-display-container w3-opacity-min">
@@ -211,11 +230,11 @@ min-height: 400px;
 
 
 
-<p>Here is my coding skill table (Only C++ has a link page): </p>
+<p>Here is my coding skill table <a href="C++.html" id="linkpageC++" > (Only C++ has a link page):</a> </p>
 <table border="1" cellspacing="1">
 	<tr>
 		<th>Language</th>
-		<td>C++   </td>
+		<td> <a href="C++.html" id="linkpageC++">C++ </a></td>
 		<td>C#    </td>
 		<td>C     </td>
 		<td>HTML  </td>
@@ -525,10 +544,10 @@ OTHER LINKS
 <script>
 function myMap()
 {
-  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  myCenter=new google.maps.LatLng(34.065898, -118.444988);
   var mapOptions= {
     center:myCenter,
-    zoom:12, scrollwheel: false, draggable: false,
+    zoom:15, scrollwheel: false, draggable: true,
     mapTypeId:google.maps.MapTypeId.ROADMAP
   };
   var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
@@ -568,8 +587,12 @@ function toggleFunction() {
     }
 }
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVvpMC-c8vHTP7PUNkTCUghWLZ_YsKdG8&callback=myMap"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2f9nu7-VpdByBerubdDdLZT6RwK6Y2qw&callback=myMap"></script>
 
+<!--
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVvpMC-c8vHTP7PUNkTCUghWLZ_YsKdG8&callback=myMap"
+  type="text/javascript"></script>
+-->
 
  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
 
@@ -580,6 +603,8 @@ function toggleFunction() {
 <!--
 MY API KEY IS
 AIzaSyDVvpMC-c8vHTP7PUNkTCUghWLZ_YsKdG8 
+2nd one is
+AIzaSyA2f9nu7-VpdByBerubdDdLZT6RwK6Y2qw
 -->
 
 
