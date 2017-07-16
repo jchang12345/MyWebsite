@@ -59,7 +59,8 @@ table
 
 
 	
-	h1 {
+	h1 
+	{
 		text-align:center;
 		border: 3px solid black;
 	}
@@ -81,14 +82,16 @@ table
 
 
 <style>
-body, html {
+body, html 
+{
     height: 100%;
     color: #13233d;
     line-height: 1.8;
 }
 
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 , .bgimg-5
+{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -96,26 +99,36 @@ body, html {
 }
 
 /* First image (Logo. Full height) */
-.bgimg-1 {
+.bgimg-1 
+{
     background-image: url("EE3ProjectPic.jpg");
     min-height: 100%;
 }
 
 /* Second image (skill) */
-.bgimg-2 {
+.bgimg-2 
+{
   background-image: url("chessskills.jpg");
 min-height: 400px;
 }
 
 /* Third image (Contact) */
-.bgimg-3 {
+.bgimg-3 
+{
     background-image: url("cont.png");
     min-height: 400px;
 }
-/* Third image (proj) */
-.bgimg-4 {
+/* fourth image (proj) */
+.bgimg-4 
+{
     background-image: url("projects.jpg");
     min-height: 400px;
+}
+/*fifth image (cv) */
+.bgimg-5
+{
+	background-image:url("CVP.png");
+	min-height:400px;
 }
 
 .w3-wide {letter-spacing: 10px;}
@@ -123,7 +136,8 @@ min-height: 400px;
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
+    .bgimg-1, .bgimg-2, .bgimg-3 
+    {
         background-attachment: scroll;
     }
 }
@@ -172,14 +186,14 @@ min-height: 400px;
   </div>
 </div>
 
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>	
 
-
-<!-- container for cov let-->
-<div class="w3-content w3-container w3-padding-64" id="cover">
-  <h3 class="w3-center"><span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><a href="cover.html" > Curriculum <span class="w3-hide-small">Vitae</span></span> </a></h3>
+<p id="cover"> click on the CV link below to go to my CV page.
+<!-- Parallax Image with CV Text -->
+<div class="bgimg-5 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+ <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><a href="cover.html" id="cover">CURRICULUM VITAE</a> <span class="w3-hide-small"></div>
 </div>
-<p> click on the CV link above to go to my CV page.
-
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
@@ -216,7 +230,7 @@ min-height: 400px;
  <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><a href="project.html" id="linkpageprojects">PROJECTS</a> <span class="w3-hide-small"></div>
 </div>
 
-
+<br/><br/><br/><br/><br/><br/>
 
 <!-- Container (skill Section) -->
 <div class="w3-content w3-container w3-padding-64" id="skills">
@@ -230,7 +244,7 @@ min-height: 400px;
 
 
 
-<p>Here is my coding skill table <a href="C++.html" id="linkpageC++" > (Only C++ has a link page):</a> </p>
+<p>Here is my coding skill table  (Only <a href="C++.html" id="linkpageC++">C++ </a> and <a href="Swift.html" id="linkSwift"> Swift </a> have a link page):</p>
 <table border="1" cellspacing="1">
 	<tr>
 		<th>Language</th>
@@ -241,6 +255,7 @@ min-height: 400px;
 		<td>CSS   </td>
 		<td>Java  </td>
 		<td>Python</td>
+		<td><a href="Swift.html" id="linkSwift"> Swift </a>  </td>
 	</tr>
 	<tr>
 		<td>Skill Level out of 10</td>
@@ -251,6 +266,7 @@ min-height: 400px;
 		<td>1</td>
 		<td>7</td>
 		<td>2</td>
+		<td>3</td>
 	</tr>
 	<tr>
 		<td>Experience in Years</td>
@@ -260,6 +276,7 @@ min-height: 400px;
 		<td>.5</td>
 		<td>.25</td>
 		<td>3</td>
+		<td>.5</td>
 		<td>.5</td>
 	</tr>
 </table>
