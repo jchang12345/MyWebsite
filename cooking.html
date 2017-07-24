@@ -1,0 +1,115 @@
+<html>
+  <!--
+  <link rel="stylesheet" type="text/css" href="helper.css"/>
+  <style type="text/css">
+  </style>
+-->
+
+<title>Cooking</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+<body>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card-2 w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Food</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-center w3-padding-16">My Food</div>
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img src="tofucut.jpg" alt="Tofu v. Cutlet" style="width:100%">
+      <h3>（Mapo Tofu) 麻坡豆腐 vs Fried Pork Cutlet</h3>
+      <p>Mapo tofu first drained then seasoned with black pepper, red chilli pepper, and simmered with soy sauce, 豆瓣醬 (dou ban jiang)， with ground pork, onions, and scallions base. </p>
+    </div>
+    <div class="w3-quarter">
+      <img src="beefcutlet.jpg" alt="Beef v Cutlet" style="width:100%">
+      <h3>Stir Fry Beef vs Fried Pork Cutlet</h3>
+      <p>Beef trim stir fried with onions, scallions, garlic, and vegetable oil, lightly seasoned with black pepper and paprika.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="Pasta1.jpg" alt="Fettuccine v Spaghetti Aglio E Olio " style="width:100%">
+      <h3>Scallop Alfreddo Fettuccine vs Spaghetti Aglio E Olio</h3>
+      <p>Brined and drained scallop, then stir fried with garlic parmessian alfreddo sauce while boiling fettuccine to al dente, then mix well and seasoned with black pepper.</p>
+       
+    </div>
+    <div class="w3-quarter">
+      <img src="friedrice2.jpg" alt="Fried Rice v Pork Fried Rice" style="width:100%">
+      <h3>Beef Fried Rice vs Pork Fried Rice</h3>
+      <p>Beef fried rice has scallions, eggs, beef trim, onions, stir fry sauce, and soy sauce.</p>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="friedrice1.jpg" alt="Beef Fried Rice" style="width:100%">
+      <h3>1st Beef Fried Rice</h3>
+      <p>First time working with Beef Fried Rice, has scallions, eggs, beef trim, onions, stir fry sauce, and soy sauce. </p>
+    </div>
+    <div class="w3-quarter">
+      <img src="pasta2.jpg" alt="Shrimp Alfreddo" style="width:100%">
+      <h3>1st Pasta: Shrimp Alfreddo</h3>
+      <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="tofubase.jpg" alt="Tofu Sauce" style="width:100%">
+      <h3>My Tofu Base</h3>
+      <p>Sauce that gets simmered into Tofu looks like this.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="ew1.jpg" alt="Rubber and Tough Beef" style="width:100%">
+      <h3>Le French</h3>
+      <p>Stir Fry beef gone wrong becasue in the pan too long, doesn't have the right amount of taste due to that.</p>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  
+  <hr id="about">
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
