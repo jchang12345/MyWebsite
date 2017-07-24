@@ -5,6 +5,10 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<?php include 'test.php';?>
+<style>
+.error {color: #FF0000;}
+</style>
 <title> Website </title>
 <style type= "text/css">
 
@@ -101,7 +105,7 @@ body, html
 /* First image (Logo. Full height) */
 .bgimg-1 
 {
-    background-image: url("EE3ProjectPic.jpg");
+    background-image: url("potcov.jpg");
     min-height: 100%;
 }
 
@@ -121,7 +125,7 @@ min-height: 400px;
 /* fourth image (proj) */
 .bgimg-4 
 {
-    background-image: url("projects.jpg");
+    background-image: url("EE3ProjectPic.jpg");
     min-height: 400px;
 }
 /*fifth image (cv) */
@@ -186,7 +190,7 @@ min-height: 400px;
   </div>
 </div>
 
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>	
+<br/><br/><br/><br/><br/><br/><br/>	
 
 <p id="cover"> click on the CV link below to go to my CV page.
 <!-- Parallax Image with CV Text -->
@@ -289,11 +293,11 @@ min-height: 400px;
     <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:96%">96%</div>
   </div>
 -->
-  <p class="w3-wide"><i class="fa fa-gamepad"></i><a href="https://na.op.gg/summoner/userName=awangachang" >League of Legends </a></p>
+  <p class="w3-wide"><i class="fa fa-gamepad"></i><a href="https://na.op.gg/summoner/userName=awangachang" >League of Legends, Plat </a></p>
   <div class="w3-light-grey">
     <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:91%">91%</div>
   </div>
-  <p class="w3-wide"><i class="fa fa-gamepad"></i> <a href="http://www.tetrisfriends.com/users/profile.php?id=5234428&linkTag=nav" >Tetris </a></p>
+  <p class="w3-wide"><i class="fa fa-gamepad"></i> <a href="http://www.tetrisfriends.com/users/profile.php?id=5234428&linkTag=nav" >Tetris, rank 20 GM </a></p>
   <div class="w3-light-grey">
     <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:88%">88%</div>
   </div>
@@ -301,7 +305,7 @@ min-height: 400px;
   <div class="w3-light-grey">
     <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:86%">86%</div>
   </div>
-  <p class="w3-wide"><i class="fa fa-cog fa-spin fa-2x fa-fw"></i>Running 5k</p>
+  <p class="w3-wide"><i class="fa fa-cog fa-spin fa-2x fa-fw"></i><a href="run.html">Running: 5k PR 17:54, 3 Mile PR 16:41</a></p>
   <div class="w3-light-grey"> <!-- put a photocollage like setup for all my runs on snapchat and continue to update if i can... in a separate html page-->
     <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:84%">84%</div>
   </div>
@@ -310,7 +314,7 @@ min-height: 400px;
   <div class="w3-light-grey">
     <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:79%">79%</div>
   </div>
-  <p class="w3-wide"><i class="fa fa-birthday-cake"></i>Cooking</p>
+  <p class="w3-wide"><i class="fa fa-birthday-cake"></i><a href="cooking.html">Cooking </a> </p>
   <div class="w3-light-grey">
     <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:70%">70%</div>
   </div>
@@ -426,10 +430,10 @@ min-height: 400px;
 <div class="w3-content w3-container w3-padding-64" id="survey">
   <h3 class="w3-center"><span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">SURVEY</span></span></h3>
 </div>
+<p> COMING SOON </p>
+<!--
 
-
-
-<form action="ActiontoDoHere" method="post">
+<form action="localhost/test.php" method="post">
 <p class="redtext"> Gender: </p>
 Male: <input type="radio" name="sex" value="male"/>
 Female: <input type="radio" name="sex" value="female"/>
@@ -460,18 +464,17 @@ LUL <input type="checkbox" name="reason" value="LUL"/>
 	<option value="Not bad"> Not bad</option>
 	<option value="Decent"> Decent </option>
 	<option value="Pretty Good"> Pretty Good </option>
-	<option value="HELL YEAH"> HELLLL YEAHHHH </option>
 	<option value="No comment"> No Comment :) </option>
 	
 </select>
 <br/>
-<!--
+
 	<p class="redtext"> I will now censor bad words (8 Characters max) : </p>
 
 	Bad Word(s): <input type="password" name="pword" maxlength="8"/>
 	
--->
-	<p class="redtext"> If you want, also feel free to send me files (don't give me anything over 1 GB though) </p>
+
+	
 	<input type="file" name="afile"/>
 	<br />
 	<input type="submit" value="Submit!">
@@ -482,13 +485,14 @@ LUL <input type="checkbox" name="reason" value="LUL"/>
 <br/>
 <hr/>
 </form>
+<p>As of now, will just do php info on this page rather than setting up localhost and storing/sending information to a different server page or email. I will update page when that works out but for now this will do. </p>
 
 
 <form>
 Typing Box (100 Characters Max): <input class="w3-input w3-border" type="text" placeholder="Whatever You Want To Type" required name="Practice" size="100" maxlength="100">
 <br/>
 <br/>
-<!--
+
 <textarea name="More Suggestions" rows="30" cols="150">
 More Suggestions or comments, type here.
 </textarea>
@@ -497,11 +501,10 @@ More Suggestions or comments, type here.
 <br/>
 
 <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
--->
 
 </form>
 
-
+-->
 <!-- Third Parallax Image with Text -->
 <div class="bgimg-3 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
@@ -540,7 +543,7 @@ OTHER LINKS
         <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: (626) 318-2080<br>
         <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> <a href= "mailto:jchang0916@ucla.edu">Email: jchang0916@ucla.edu</a><br>
       </div>
-      <p>Swing by for a cup of<i class="fa fa-tint"></i>, or leave me another msg:</p>
+      <p>Swing by for a talk or <i class="fa fa-tint"></i>. Send me an email or get in contact:</p>
       <form action="/action_page.php" target="_blank">
         <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
           <div class="w3-half">
@@ -552,7 +555,7 @@ OTHER LINKS
         </div>
         <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
         <button class="w3-button w3-black w3-right w3-section" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          <i class="fa fa-paper-plane"></i> COMING SOON
         </button>
       </form>
     </div>
@@ -608,6 +611,71 @@ function toggleFunction() {
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2f9nu7-VpdByBerubdDdLZT6RwK6Y2qw&callback=myMap"></script>
 
+
+<!--
+<?php
+// define variables and set to empty values
+$nameErr = $emailErr = $genderErr = $websiteErr = "";
+$name = $email = $gender = $comment = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (empty($_POST["reason"])) {
+    $nameErr = "Reason is required";
+  } else {
+    $name = test_input($_POST["reason"]);
+    // check if name only contains letters and whitespace
+    if (!preg_match("/^[a-zA-Z ]*$/",$reason)) {
+      $nameErr = "Only letters and white space allowed"; 
+    }
+  }
+  
+  if (empty($_POST["email"])) {
+    $emailErr = "Email is required";
+  } else {
+    $email = test_input($_POST["email"]);
+    // check if e-mail address is well-formed
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+      $emailErr = "Invalid email format"; 
+    }
+  }
+
+  if (empty($_POST["text"])) {
+    $comment = "";
+  } else {
+    $comment = test_input($_POST["text"]);
+  }
+
+  if (empty($_POST["sex"])) {
+    $genderErr = "Sex is required";
+  } else {
+    $gender = test_input($_POST["sex"]);
+  }
+}
+
+
+
+<?php
+echo "<h2>Your Input:</h2>";
+echo $reason;
+echo "<br>";
+echo $email;
+echo "<br>";
+echo $text;
+echo "<br>";
+echo $sex;
+?>
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+?>
+-->
+
+
+
 <!--
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVvpMC-c8vHTP7PUNkTCUghWLZ_YsKdG8&callback=myMap"
   type="text/javascript"></script>
@@ -615,7 +683,6 @@ function toggleFunction() {
 
  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
 
- <a href="second.html" id="linkpage2">Test Link to Page 2 </a>
 
 
 
