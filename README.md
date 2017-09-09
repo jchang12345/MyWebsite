@@ -1,3 +1,3 @@
 # MyWebsite
 
-PERSONAL WEBSITE
+PERSONAL WEBSITE, kind of like a personal portfolio. Here I try to discuss my passions, about me, projects, skills, background, and much more. I know I have a long way to go in web development as well since a lot of this isn't very smooth, or as smooth as I would like, since the basic skeleton of this "parallax" effect came from a template. I tried to adjust many things and incorporated other elements, especially to other html pages, and tried using a few APIs special effects/styles to improve visual appeal, though I know I still have a long way to go and lack other powerful styling frameworks in this site. 
