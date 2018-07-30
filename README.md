@@ -5,3 +5,5 @@ PERSONAL WEBSITE, kind of like a personal portfolio. Here I try to discuss my pa
 AS OF APRIL 5th 2018, Domain above using .me has expired so no longer able to access website content!!! Will try to figure out if I want to renew or purchase a domain some other time but not now.
 
 UPDATE AS OF JULY 30th 2018, hosting it on github pages for free now!
+
+Also, in the meantime, I will be moving files around and organizing things into folder so website most likely will not work until the organization part is done. I will also be periodically updating the website in the meantime, so stay tuned for that!
