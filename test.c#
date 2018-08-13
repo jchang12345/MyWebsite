@@ -1,0 +1,12 @@
+private void Update()
+    {
+        ...
+
+// Moves enemy towards target
+        transform.position = Vector2.MoveTowards(transform.position, target.transform.position, MoveSpeed * Time.deltaTime);
+
+// Sets animator's values to see which direction the enemy is primarily moving
+        animator.SetFloat("input_x", rb.velocity.x);
+        animator.SetFloat("input_y", rb.velocity.y);
+
+    }
